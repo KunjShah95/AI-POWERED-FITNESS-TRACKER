@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Fitness Tracker</h1>
+            <button id="theme-toggle" class="theme-toggle">
+                <span class="light-icon">🌞</span>
+                <span class="dark-icon">🌙</span>
+            </button>
+        </header>
+
+        <section id="body-metrics">
+            <h2>Body Metrics</h2>
+            <form id="metrics-form" class="metrics-grid">
+                <div class="form-group">
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" required min="100" max="250">
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" required min="30" max="300">
+                </div>
+                <div id="bmi-result" class="form-group">
+                    BMI: <span>-</span>
+                </div>
+            </form>
+        </section>
+
+        <section id="workout-recommendation">
+            <h2>Get Workout Recommendations</h2>
+            <form id="recommendation-form">
+                <div class="form-group">
+                    <label for="goals">Fitness Goals:</label>
+                    <textarea id="goals" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fitness-level">Fitness Level:</label>
+                    <select id="fitness-level" required>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="preferences">Preferences/Limitations:</label>
+                    <textarea id="preferences"></textarea>
+                </div>
+                <button type="submit">Get Recommendations</button>
+            </form>
+            <div id="recommendation-result" class="result-box"></div>
+        </section>
+
+        <section id="workout-tracker">
+            <h2>Track Your Workout</h2>
+            <form id="tracker-form">
+                <div class="form-group">
+                    <label for="workout">Describe your workout:</label>
+                    <textarea id="workout" required></textarea>
+                </div>
+                <button type="submit">Get Feedback</button>
+            </form>
+            <div id="feedback-result" class="result-box"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
