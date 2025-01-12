@@ -8,6 +8,7 @@
 ![GitHub license](https://img.shields.io/github/license/KunjShah95/AI-POWERED-FITNESS-TRACKER)
 
 Welcome to the AI-Powered Fitness Tracker! This project leverages AI technology to help you track and improve your fitness journey. Stay on top of your goals with real-time analytics and personalized recommendations.
+![image](https://github.com/user-attachments/assets/83a20672-66a4-4b96-84bc-62f3d2473720)
 
 
 ## Table of Contents 📑
